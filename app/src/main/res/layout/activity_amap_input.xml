@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/switch_thumb_material">
+    <com.zzdc.uwb.View.Widget.NavigationBar
+        android:id="@+id/search_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:elevation="4dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center"
+            android:src="@drawable/offline_back"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/offset_title_left"
+            android:layout_marginLeft="@dimen/offset_title_left"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/offset_title_left"
+            android:layout_toRightOf="@id/img_left"
+            android:background="@drawable/search_bar_blue"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/search_icon_white" />
+
+            <AutoCompleteTextView
+                android:id="@+id/input_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="@dimen/offset_title_left"
+                android:layout_marginStart="4dp"
+                android:background="@color/transparent"
+                android:hint="请输入目的地关键字"
+                android:inputType="text|textAutoComplete"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </com.zzdc.uwb.View.Widget.NavigationBar>
+    <ListView 
+        android:id="@+id/inputlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_marginTop="6dp"
+        android:background="@color/white">
+        
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fm_mp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.fengmap.android.map.FMMapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.zzdc.uwb.View.Widget.NavigationBar
+        android:id="@+id/bar_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:elevation="4dp">
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+            <CheckBox
+                android:id="@+id/cb_layers_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/tab_layers_label"
+                android:textColor="@color/inner_text1" />
+
+            <CheckBox
+                android:id="@+id/cb_layers_facility"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/tab_layers_facility"
+                android:textColor="@color/inner_text1"/>
+        </LinearLayout>
+
+    </com.zzdc.uwb.View.Widget.NavigationBar>
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/fm_mp_mun"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="end">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+    <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+
+
+</RelativeLayout>
